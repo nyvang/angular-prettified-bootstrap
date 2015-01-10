@@ -9,15 +9,19 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-  
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular.min.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
 </head>
 
-<body>
-<div class="container">
+<!-- Define the AngularJS root -->
+<body ng-app="ngBootstrap">
+
+<!-- First step - the Container element
+Instead of <div class="container"> .... </div> 
+We can use our brand new AngularJS Directive Element 
+and now we only write:
+
+<container> .... </container>
+-->
+<container>
 	<div class="row clearfix">
 		<div class="col-md-12 column">
 			<div class="jumbotron">
@@ -168,6 +172,11 @@
 			</div> <span class="label label-default">Label</span>
 		</div>
 	</div>
-</div>
+</container>
+		<!-- Scripting - might as well place it right even though this is a demo.. -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular.min.js"></script>
+    <script type="text/javascript" src="angular-magic/js/scripts.js"></script>
 </body>
 </html>
